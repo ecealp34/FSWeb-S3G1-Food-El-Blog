@@ -1,11 +1,37 @@
 /*======= Font rengini #3C373B yapan bir yeni bir universal selector yaratın*/
 
+* {
+  color:#3C373B
+}
+
+.image1 {
+  background-color: rgb(243, 243, 243);
+ 
+}
+
+.sağ{
+  width: 250px; 
+}
+
+
+.sol {float: left; padding:  30px 10px;}
+
+
+button {
+  padding: 15px 20px 10px 15px;
+  border: none;
+  display: inline;
+  margin: 7px 3px 10px 25px;
+  
+}
+
 
 h1 {
   font-family: 'Gaegu', cursive;
   margin: 20px 0;
   /*=======  Font size'ı 60px yapın ve text'i ortalayın(center) */
-  font-size: 10px;
+  font-size: 60px;
+  text-align: center;
 }
 
 h2, h3, h4, h5, h6 {
@@ -13,7 +39,8 @@ h2, h3, h4, h5, h6 {
   margin-bottom: 0;
   padding: 0 10px;
   /*=======  Font size'ı 30px yapın*/
-  font-size: 10px;
+  font-size: 30px;
+  margin-left: 30px
 }
 
 /*======= Sayfadaki TÜM p tag'leri için aşağıdaki özellikleri içeren bir selector yaratın:
@@ -25,6 +52,14 @@ line-height: 1.4;
 
 */
 
+p {
+  font-size: 16px;
+font-family: roboto;
+padding: 10px;
+line-height: 1.4;
+margin-left: 30px
+}
+
 
 /*======= Sayfadaki TÜM imajlar için aşağıdaki özellikleri içeren bir selector yaratın:
 
@@ -32,17 +67,29 @@ line-height: 1.4;
 
 */
 
+img {
+
+  border-radius: 10px;
+  width: 100%;
+  margin-left: 3px;
+  background-color: rgb(104, 100, 100);
+
+  
+}
+
 .content-row {
   display: flex;
 }
 
 .content-row div {
-  /*======= margin propery yaratın.  Değerini 20px olarak atayın*/
+ margin-left: 0ch ; 
+ margin: 20px;
 }
 
 .container {
   /*======= width property yaratın. Değerini 605px olarak atayın */
   margin: 0 auto;
+  width: 605px;
 }
 
 .container header nav a {
@@ -54,17 +101,20 @@ line-height: 1.4;
   color: white;
   text-decoration: none;
   margin-bottom: 20px;
-   /*======= background property yaratın. Değerini #E79947 olarak atayınız.*/
+   background-size: #E79947 
   
 }
 
 .container header nav a:hover {
-/*======= background property yaratın ve değeri white olsun.  Sonra, color property yaratın ve değerini yapın. */
+background-color: white;  color: black
 }
 
 /*======= Hakkmızda bölümü için aşağıdaki stilleri içeren bir selector yaratın:
   margin-top: 20px;
 */
+h1 { 
+  margin-top: 20px;
+}
 
 .contact-section {
   border-top: 1px dashed black;
@@ -88,7 +138,7 @@ footer {
 
 footer .footer-content { 
   margin: 0 auto; 
-  /*======= width property yaratın. Değerini 605px olarak atayın */
+  width: 605px
   
 }
 
@@ -116,7 +166,13 @@ footer nav a:first-child {
   color: white;
 */
 
+footer nav anchor:hover {
+  color: white;
+}
+
+
+
 footer .footer-content .copyright {
   padding: 20px 0;
-   /*======= metni ortalayacak kodu yazın */
+   text-align: center;
 }
