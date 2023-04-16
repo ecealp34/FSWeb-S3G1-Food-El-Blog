@@ -1,30 +1,8 @@
 /*======= Font rengini #3C373B yapan bir yeni bir universal selector yaratın*/
 
 * {
-  color:#3C373B
+  color:#3C373B;  
 }
-
-.image1 {
-  background-color: rgb(243, 243, 243);
- 
-}
-
-.sağ{
-  width: 250px; 
-}
-
-
-.sol {float: left; padding:  30px 10px;}
-
-
-button {
-  padding: 15px 20px 10px 15px;
-  border: none;
-  display: inline;
-  margin: 7px 3px 10px 25px;
-  
-}
-
 
 h1 {
   font-family: 'Gaegu', cursive;
@@ -35,12 +13,11 @@ h1 {
 }
 
 h2, h3, h4, h5, h6 {
-  font-family: 'Gaegu', cursive;
+  font-family: 'Comic Neue', cursive;
   margin-bottom: 0;
   padding: 0 10px;
   /*=======  Font size'ı 30px yapın*/
   font-size: 30px;
-  margin-left: 30px
 }
 
 /*======= Sayfadaki TÜM p tag'leri için aşağıdaki özellikleri içeren bir selector yaratın:
@@ -54,10 +31,9 @@ line-height: 1.4;
 
 p {
   font-size: 16px;
-font-family: roboto;
-padding: 10px;
-line-height: 1.4;
-margin-left: 30px
+  font-family: roboto;
+  padding: 10px;
+  line-height: 1.4;
 }
 
 
@@ -66,53 +42,77 @@ margin-left: 30px
   border-radius: 10px;
 
 */
+nav {
+  font-family: "Comic Neus", cursive;
+  font-weight: bold;
+}
 
 img {
-
   border-radius: 10px;
   width: 100%;
-  margin-left: 3px;
-  background-color: rgb(104, 100, 100);
-
-  
 }
 
 .content-row {
   display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
 }
 
-.content-row div {
- margin-left: 0ch ; 
- margin: 20px;
+.content-row img {
+  width: 40%;
+  
+
+}
+
+.content-row .content-img {
+  min-width: 40%
+}
+.content-row div { 
+ margin: 20px 0px 0px 0px;
 }
 
 .container {
   /*======= width property yaratın. Değerini 605px olarak atayın */
   margin: 0 auto;
-  width: 605px;
+  width: 805px;
 }
 
+.image1 {
+  background-color: aliceblue;
+  width: 100%;
+  padding: 30px 0px 30px 0px;
+}
+
+.container header nav {
+  display: flex;
+  justify-content: space-between;
+}
 .container header nav a {
-  margin: 0 10px;
+  font-size: 14px;
+  margin: 0 5px 0 0;
   border: 1px solid lightgray;
-  padding: 20px;
+  padding: 12px 20px 8px;
   display: inline-block;
   border-radius: 20px;
   color: white;
   text-decoration: none;
   margin-bottom: 20px;
-   background-size: #E79947 
+  background: #E79947;
+ 
   
 }
 
 .container header nav a:hover {
-background-color: white;  color: black
+background-color: white; 
+ color:  #E79947;
+
 }
 
 /*======= Hakkmızda bölümü için aşağıdaki stilleri içeren bir selector yaratın:
   margin-top: 20px;
 */
-h1 { 
+.about-section { 
   margin-top: 20px;
 }
 
@@ -138,7 +138,7 @@ footer {
 
 footer .footer-content { 
   margin: 0 auto; 
-  width: 605px
+  width: 805px;
   
 }
 
@@ -157,7 +157,11 @@ footer nav {
   text-decoration: underline;
 */
 
-
+footer nav a {
+  margin: 10px;
+  color: black;
+  text-decoration: underline;
+}
 footer nav a:first-child {
   margin-left: 0;
 }
@@ -174,5 +178,5 @@ footer nav anchor:hover {
 
 footer .footer-content .copyright {
   padding: 20px 0;
-   text-align: center;
+  text-align: center;
 }
